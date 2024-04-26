@@ -10,7 +10,7 @@ async function main() {
     }
 
 
-  console.log(UserService.containerInjections)
+  // console.log(UserService.containerInjections)
 
   const container = new Container()
   const service = await container.make(UserService)
