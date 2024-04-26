@@ -1,0 +1,26 @@
+{
+	"type": "module",
+	"scripts": {
+		"build": "tsup-node"
+	},
+	"dependencies": {
+		"@adonisjs/fold": "^10.1.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.7",
+		"reflect-metadata": "^0.2.2",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.5"
+	},
+	"tsup": {
+		"entry": [
+			"./src/index.ts"
+		],
+		"outDir": "./build",
+		"clean": true,
+		"format": "esm",
+		"dts": false,
+		"sourcemap": true,
+		"target": "esnext"
+	}
+}
